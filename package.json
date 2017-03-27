@@ -6,6 +6,6 @@
   "author": "Matt Hayes <matt@mysterycommand.com> (http://mysterycommand.com/)",
   "license": "MIT",
   "dependencies": {
-    "nearley": "Hardmath123/nearley"
+    "nearley": "^2.8.0"
   }
 }

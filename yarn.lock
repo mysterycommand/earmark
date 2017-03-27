@@ -10,9 +10,9 @@ discontinuous-range@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/discontinuous-range/-/discontinuous-range-1.0.0.tgz#e38331f0844bba49b9a9cb71c771585aab1bc65a"
 
-nearley@Hardmath123/nearley:
+nearley@^2.8.0:
   version "2.8.0"
-  resolved "https://codeload.github.com/Hardmath123/nearley/tar.gz/b134d678779952abf7c0914597a8446cc0e30a93"
+  resolved "https://registry.yarnpkg.com/nearley/-/nearley-2.8.0.tgz#7f88b503e3b373503f5c7e5b3b52bf134c86145b"
   dependencies:
     nomnom "~1.6.2"
     railroad-diagrams "^1.0.0"
