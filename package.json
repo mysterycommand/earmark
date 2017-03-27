@@ -1,0 +1,12 @@
+{
+  "name": "earmark",
+  "version": "1.0.0",
+  "description": "A Markdown lexer/parser (following the CommonMark spec) written in Nearly.js",
+  "main": "index.js",
+  "repository": "git@github.com:mysterycommand/earmark.git",
+  "author": "Matt Hayes <matt@mysterycommand.com> (http://mysterycommand.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "nearly": "^1.7.1"
+  }
+}
