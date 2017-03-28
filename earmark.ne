@@ -3,33 +3,25 @@
 #
 
 main -> document
-document -> line:+ {%
-    function (data) {
-        return {
-            type: 'document',
-            lines: data[0],
-        }
-    }
-%}
+document -> (line:+ | blank_line:+):+ {% id %}
 
-character -> .
-whitespace -> " " | "\t"
-
-line -> character:* line_ending {%
-    function(data) {
-        return {
+line -> character:+ line_ending {%
+	function (data) {
+		return {
 			type: 'line',
-			characters: data[0],
+			data: data[0]
 		};
-    }
+	}
 %}
 
 blank_line -> whitespace:* line_ending {%
-    function() {
-        return {
-			type: 'blank_line',
-		};
-    }
+	function () {
+		return { type: 'blank_line' };
+	}
 %}
 
-line_ending -> "\n" | "\r" | "\r\n"
+character -> .
+whitespace -> [\s]
+line_ending -> "\r\n"
+    | "\r"
+    | "\n"
